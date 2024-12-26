@@ -1,8 +1,10 @@
 package ru.frigesty.modal;
 
+import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 public class Phone {
     private String brand;
     private String model;
@@ -11,32 +13,4 @@ public class Phone {
     private Integer memoryGB;
     private CPU cpu;
     private Camera camera;
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public List<String> getNavigationSystem() {
-        return navigationSystem;
-    }
-
-    public String getOperatingSystem() {
-        return operatingSystem;
-    }
-
-    public Integer getMemoryGB() {
-        return memoryGB;
-    }
-
-    public CPU getCPU() {
-        return cpu;
-    }
-
-    public Camera getCamera() {
-        return camera;
-    }
 }
